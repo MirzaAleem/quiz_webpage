@@ -128,24 +128,22 @@ if (start) {
 // Next button and method
 const next = document.getElementsByClassName('right carousel-control')[0];
 const prev = document.getElementsByClassName('left carousel-control')[0];
-var id = 0,Id = 2;
+var id = 0;
 
 next.addEventListener("click", () => {
-	start = false;
 	if (id < 2) {
 		id++;
 		iterate(id);
 		console.log(id);
 		
 	}
+	
+})
 prev.addEventListener("click", () => {
-	start = false;
-	if (Id > 0) {
+	if (id > 0) {
 		Id--;
-		iterate(Id);
-		console.log(Id);
+		iterate(id);
+		console.log(id);
 		
-	}	
-
-
+	}
 })
