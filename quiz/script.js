@@ -141,7 +141,7 @@ next.addEventListener("click", () => {
 })
 prev.addEventListener("click", () => {
 	if (id > 0) {
-		Id--;
+		id--;
 		iterate(id);
 		console.log(id);
 		
